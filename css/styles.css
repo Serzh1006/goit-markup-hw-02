@@ -95,7 +95,6 @@ body {
 .button {
   color: var(--header-color);
   background-color: var(--accent-color);
-  cursor: pointer;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -106,6 +105,7 @@ body {
 .button:hover,
 .button:focus {
   background-color: var(--button-color);
+  cursor: pointer;
 }
 /* titles h2-h6*/
 
@@ -176,4 +176,5 @@ body {
 .filter-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  cursor: pointer;
 }

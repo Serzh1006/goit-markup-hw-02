@@ -21,7 +21,6 @@ body {
   background-color: var(--header-color);
   color: var(--primary-color);
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
 }
 
 /* logo */
@@ -38,7 +37,7 @@ body {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
 
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
   letter-spacing: 0.03em;
@@ -118,6 +117,11 @@ body {
 .team {
   background-color: var(--section-color);
 }
+
+.team-list-item {
+  background-color: var(--white-color);
+}
+
 .advantages .section-title,
 .team .section-title,
 .works .section-title {
@@ -137,6 +141,7 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  color: var(--secondary-color);
 }
 /* text footer */
 

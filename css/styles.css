@@ -1,193 +1,206 @@
-/* 
-#FFFFFF; white
-#434455; primary color
-#2E2F42; secondary color
-#4D5AE5; accent color
-#F4F4FD; button + section color
-#404BBF; button focus color
-*/
 :root {
-  --white-color: #ffffff;
-  --primary-color: #434455;
-  --secondary-color: #2e2f42;
-  --accent-color: #4d5ae5;
-  --section-color: #f4f4fd;
-  --header-color: #ffffff;
-  --button-color: #404bbf;
-  --text-footer: #e7e9fc;
+  --iris: #4d5ae5;
+  --ocean: #404bbf;
+  --navy-blue: #2e2f42;
+  --green: #31d0aa;
+  --slate: #434455;
+  --light-slate: #8e8f99;
+  --cornflower: #e7e9fc;
+  --cloud: #f4f4fd;
+  --navy-blue-modal: rgba(46, 47, 66, 0.4);
+  --grey: rgba(46, 47, 66, 0.7);
+  --white: #fff;
+  --dairy: #fcfcfc;
+}
+:root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
 }
 
 body {
-  background-color: var(--header-color);
-  color: var(--primary-color);
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
+  color: var(--navy-blue);
 }
 
-/* logo */
+/*---------- header ----------*/
 
-.logo {
-  color: var(--accent-color);
+.header {
+  background-color: var(--white);
 }
-
-/* navigation */
+.nav-section {
+}
 .nav-logo,
-.f-logo {
-  color: var(--secondary-color);
+.footer-logo {
+  font-family: var(--second-family);
+  font-weight: 700;
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-
-  font-weight: 800;
   font-size: 18px;
-  line-height: 1.33;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: inherit;
 }
-
-/* nav-links */
-
-.nav-links {
-  color: var(--secondary-color);
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+.nav-logo-web {
+  color: var(--iris);
 }
-
-.nav-links:hover,
-.nav-links:focus {
-  color: var(--accent-color);
-}
-
-.list {
+.nav-list {
   list-style: none;
 }
-
-/* contacts */
-
-.contacts-link {
-  color: inherit;
-  text-decoration: none;
+.nav-list-item {
+}
+.nav-list-item-link {
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
-  color: var(--accent-color);
+.nav-list-item-link:hover,
+.nav-list-item-link:focus {
+  color: var(--ocean);
 }
 
-/* hero */
+.address {
+}
+.address-list {
+  list-style: none;
+}
+.address-list-item {
+}
+.address-list-item-link {
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--slate);
+}
 
-.hero {
-  background-color: var(--secondary-color);
+.address-list-item-link:hover,
+.address-list-item-link:focus {
+  color: var(--ocean);
+}
+
+/*---------- hero ----------*/
+
+.hero-section {
+  background-color: var(--navy-blue);
 }
 .hero-title {
-  color: var(--header-color);
-  font-weight: 500;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--white);
 }
-
-/* button hero*/
-
-.button {
-  color: var(--header-color);
-  background-color: var(--accent-color);
-  font-family: inherit;
+.hero-btn {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--button-color);
+  border: none;
   cursor: pointer;
-}
-/* titles h2-h6*/
-
-.section-title {
-  color: var(--secondary-color);
+  color: var(--white);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: var(--iris);
 }
 
-/* section our team */
-
-.team {
-  background-color: var(--section-color);
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--ocean);
 }
 
-.team-list-item {
-  background-color: var(--white-color);
-}
+/*---------- advantages ----------*/
 
-.advantages .section-title,
-.team .section-title,
-.works .section-title {
+.advan-section {
+}
+.advan-title {
+}
+.advan-list {
+  list-style: none;
+}
+.advan-list-item {
+}
+.advan-list-item-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-
-.list-text {
+.advan-list-item-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
-.title {
-  font-weight: 500;
+/*---------- Our team ----------*/
+
+.team-section {
+  background-color: var(--cloud);
+}
+.team-title {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
-  color: var(--secondary-color);
+  text-align: center;
 }
-/* text footer */
-
-.advice {
-  color: var(--text-footer);
-  line-height: 1.5;
+.team-list {
+  list-style: none;
+}
+.team-list-item {
+}
+.team-list-item-img {
+}
+.team-list-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 }
-
-.section-f {
-  background-color: var(--secondary-color);
-}
-.f-logo {
-  color: var(--section-color);
-}
-
-/* ----------Portfolio---------- */
-
-/* filter */
-
-.filter-button {
-  color: var(--accent-color);
-  background-color: var(--section-color);
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
+.team-list-item-text {
   line-height: 1.5;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
-.filter-button:hover,
-.filter-button:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  cursor: pointer;
+/*---------- portfolio ----------*/
+
+.portfolio-section {
+}
+.portfolio-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.portfolio-list {
+  list-style: none;
+}
+.portfolio-list-item {
+}
+.portfolio-list-item-img {
+}
+.portfolio-list-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.portfolio-list-item-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--slate);
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+/*---------- footer ----------*/
+
+.footer {
+  background-color: var(--navy-blue);
+}
+.footer-logo {
+  color: var(--cloud);
+}
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--cloud);
 }

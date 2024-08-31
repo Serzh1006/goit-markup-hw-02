@@ -19,7 +19,8 @@
 
 body {
   font-family: var(--font-family);
-  color: var(--navy-blue);
+  color: var(--slate);
+  background-color: var(--white);
 }
 
 /*---------- header ----------*/
@@ -38,10 +39,10 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: inherit;
+  color: var(--iris);
 }
 .nav-logo-web {
-  color: var(--iris);
+  color: var(--navy-blue);
 }
 .nav-list {
   list-style: none;
@@ -53,7 +54,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: inherit;
+  color: var(--navy-blue);
 }
 
 .nav-list-item-link:hover,
@@ -62,6 +63,7 @@ body {
 }
 
 .address {
+  font-style: normal;
 }
 .address-list {
   list-style: none;
@@ -73,7 +75,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: var(--slate);
+  color: inherit;
 }
 
 .address-list-item-link:hover,
@@ -100,7 +102,6 @@ body {
   border: none;
   cursor: pointer;
   color: var(--white);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--iris);
 }
 
@@ -125,11 +126,11 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 .advan-list-item-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--slate);
 }
 
 /*---------- Our team ----------*/
@@ -142,11 +143,14 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
+  color: var(--navy-blue);
 }
 .team-list {
   list-style: none;
 }
 .team-list-item {
+  background-color: var(--white);
 }
 .team-list-item-img {
 }
@@ -155,11 +159,11 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 .team-list-item-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--slate);
 }
 
 /*---------- portfolio ----------*/
@@ -170,7 +174,9 @@ body {
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   text-align: center;
+  color: var(--navy-blue);
 }
 .portfolio-list {
   list-style: none;
@@ -184,11 +190,11 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 .portfolio-list-item-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--slate);
 }
 
 /*---------- footer ----------*/
@@ -196,9 +202,11 @@ body {
 .footer {
   background-color: var(--navy-blue);
 }
-.footer-logo {
+
+.footer-logo-web {
   color: var(--cloud);
 }
+
 .footer-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
